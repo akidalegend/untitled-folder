@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    padding: 1em;
+    background-color: honeydew;
 }
 
 #hamburger-icon {
@@ -11,21 +13,37 @@ body {
     justify-content: space-around;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
 .grid-item {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
 }
 
-.grid-item img {
+.image-text {
+    text-align: center;
+}
+.grid-image img {
+    margin-top: 2em;
     width: 100%;
     height: auto;
+}
+.grid-points ul li {
+    margin-bottom: 1.5em; /* adjust as needed */
+}
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+#menu-toggle {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+header {
+    margin-bottom: 3em; 
 }
