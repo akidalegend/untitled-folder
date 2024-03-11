@@ -25,18 +25,15 @@
         </label>
     </header>
     <main>
-        <div class="grid-item">
-            <div class="grid-points">
-                <ul>
-                    <li>Hi there, I'm Akram Careem. Pleasure to notice you on my portfolio. Here you can see my projects, a video demonstration and my contact information</li>
-                    <li>I'm an upcoming data scientist and I'm passionate about web development among other things. I'm also a huge fan of open source software and I love to contribute to the community.</li>
-                    <li>I'm currently working on a project to create a rewards based system for a music streaming platform based on the amount of hours listened and the number of months subscribed.</li>
-                </ul>
-            <div class="grid-image">
-                <img src="IMG_5402.jpeg" alt="Image 1">
-            </div>
-            <p class="image-text">It's not coding till you get an actual cafe</p>
-            
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
             </div>
         </div>
         </section>
